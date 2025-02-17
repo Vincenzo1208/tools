@@ -1,0 +1,410 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+/* :root {
+  --color-background: #fffdf9;
+  --color-text: #201515;
+  --color-tools: #E9F6FF;
+  --color-theme: #ff4f00;
+  --color-gray: #EFECEC;
+} */
+
+:root {
+  --color-background: black;
+  --color-text: #F6F5F5;
+  --color-tools: #E9F6FF;
+  --color-theme: #0099ff;
+  --color-gray: #0a0a0a;
+  --color-button: #65B741;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: #33333b;
+}
+
+/* Scrollbar  */
+
+
+::-webkit-scrollbar {
+  width: 8px; /* Width*/
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-theme); /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-gray); /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-text); /* Color of the scrollbar thumb on hover */
+}
+
+
+/* Navbar CSS File */
+
+.navbar {
+  background-color: var(--color-background);
+  padding: 1% 5%;
+}
+
+.navbar-brand {
+  
+  font-weight: 600;
+  background: linear-gradient(90deg, rgba(46,161,255,1) 0%, rgba(88,225,252,1) 50%, rgba(63,153,255,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  cursor: pointer;
+  color: transparent!important; 
+}
+
+.nav-link, .dropdown-item {
+  color: var(--color-text);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-link:hover,.dropdown-item:hover,.nav-link:focus {
+  color: var(--color-theme)!important;
+  font-weight: 500;
+}
+
+.dropdown-menu{
+  color: var(--color-text);
+  background-color: var(--color-background);
+  border: none;
+  margin: 2% 0%;
+  border: 1px solid var(--color-theme);
+}
+
+.nav-link.show{
+  color: var(--color-theme)!important;
+}
+
+/* Tagline File CSS */
+
+.taglinediv {
+  background-color: var(--color-background);
+  padding: 8% 5%;
+  color: var(--color-text);
+
+  padding-bottom: 4%;
+}
+
+.taglineh1 {
+  z-index: 99;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.tagline h4 {
+  margin: 2% 0%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.taglinebtn1 {
+  margin: 0% 1%;
+  background-color: var(--color-theme);
+  color: var(--color-background);
+  border-radius: 25px;
+  padding: 1% 1.8%;
+  text-decoration: none;
+}
+
+.taglinebtn2 {
+  margin: 0% 1%;
+  background-color: var(--color-background);
+  color:var(--color-text);
+  border: 1px solid var(--color-text);
+  border-radius: 25px;
+  padding: 1% 1.8%;
+  text-decoration: none;
+}
+
+.taglinebtns {
+  margin: 3% 0%;
+  margin-top: 5%;
+}
+
+.taglinebtns {
+  animation: floating 2s infinite ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.checkpoints {
+  font-size: 0.9rem;
+}
+
+.bgeffect {
+  height: 180px;
+  width: 180px;
+  background-color: #0099ff;
+  border-radius: 50%;
+  filter: blur(180px);
+
+  animation: blurAnimation 4s ease-in-out infinite;
+}
+
+@keyframes blurAnimation {
+  0% { filter: blur(180px); }
+  50% { filter: blur(150px); }
+  100% { filter: blur(190px); }
+}
+
+/* Tools Div CSS */
+
+
+.toolsdiv {
+  background-color: var(--color-gray);
+  padding: 6% 6%;
+  color: var(--color-text);
+}
+
+.tools-btn {
+  font-weight: 600;
+  color: #33333b;
+  text-decoration: underline 2px;
+}
+
+.row {
+  margin-top: 2%
+}
+
+.toolsdiv h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+/* Tools div -> Card */
+
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.tools-card {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  border: none;
+  margin: 2% 0%;
+
+  border: 1px solid var(--color-theme) !important;
+
+  padding: 0.9% 1%;
+}
+
+.img-comp {
+  padding: 6% 6%;
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.card-head {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 1% 2%;
+  background-color: var(--color-theme);
+  color: var(--color-text);
+  border: none;
+}
+
+.btn:hover {
+  color: var(--color-theme);
+  background-color: var(--color-text);
+}
+
+.download-btn {
+  border: 1px solid var(--color-theme);
+  background-color: var(--color-theme);
+  color: var(--color-text);
+  font-weight: 500;
+  padding: 0.9% 1.8%;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.download-btn:hover {
+  color: var(--color-theme);
+  background-color: var(--color-background);
+}
+
+.textutilbtns button {
+  margin: 0% 0.5%;
+}
+
+.comp-img {
+  border-radius: 15px;
+}
+
+.qrcode {
+  padding: 6% 6%;
+
+  background-color: var(--color-gray);
+  color: var(--color-text);
+}
+
+.qrcodehead {
+  padding-bottom: 2%;
+}
+
+textarea, input {
+  width: 70%;
+}
+
+.divone {
+  padding-bottom: 5%;
+}
+
+.footer {
+  padding: 5% 6%;
+  background-color: #191919;
+  color: var(--color-text);
+}
+
+/* Textutil file CSS */
+
+.textutilcomp {
+  padding: 6% 6%;
+  background-color: var(--color-background);
+  color: var(--color-text);  
+}
+
+/* Text Extractor CSS */
+
+.textextcomp {
+  padding: 6% 6%;
+
+  background-color: var(--color-gray);
+  color: var(--color-text);
+}
+
+/* Password Generator CSS */
+
+.passcomp {
+  padding: 6% 6%;
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Youtube Thumbnail Downloader */
+
+.ytcomp {
+  padding: 6% 6%;
+  background-color: var(--color-gray);
+  color: var(--color-text);
+}
+
+/* Image Convertor Downloader */
+
+.imageconvertorcomp {
+  padding: 6% 6%;
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* URL Component */
+
+.urlcomp {
+  padding: 6% 6%;
+
+  background-color: var(--color-gray);
+  color: var(--color-text);
+}
+
+/* PDF Compressor Component */
+
+.pdfcomp {
+  padding: 6% 6%;
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Contributers Component */
+
+.contributerscomp {
+  padding: 6% 6%;
+  background-color: var(--color-gray);
+  color: var(--color-text);
+}
+
+.contributer-card {
+  border: none;
+  padding: 1% 2%;
+  margin: 2% 1%;
+
+  background-color: var(--color-gray);
+  color: var(--color-text);
+}
+
+.contributer-img {
+  /* border: 4px solid var(--color-theme); */
+  width: 80%;
+  background-color: var(--color-background);
+  animation: floating-avatar 2s infinite ease-in-out;
+}
+
+.card-head-contributer {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+@keyframes floating-avatar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.link-btn {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+}
+
+.link-btn:hover {
+  color: var(--color-theme);
+  border: 1px solid var(--color-theme);
+}
+
+/* Signup Component CSS */
+
+.signup-comp{
+  padding: 4% 6%;
+  background-color: var(--color-gray);
+  color: var(--color-text);
+}
+
+.signup-card{
+  margin-top: 2%;
+  padding: 2% 0%;
+  background-color: var(--color-gray);
+  color: var(--color-text);
+  /* border: 1px solid var(--color-text); */
+}
+
