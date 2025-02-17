@@ -1,6 +1,6 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link as RouteLink, useLocation } from "react-router-dom";
+import { Link as RouteLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -30,17 +30,17 @@ export default function Navbar() {
               </li>
               <li className="nav-item dropdown">
                 <RouteLink
-                  to="\"
+                  to="/"
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Tools
                 </RouteLink>
-                <ul className="dropdown-menu" role="button">
+                <ul className="dropdown-menu">
                   <li>
                     <ScrollLink
-                      smooth="true"
+                      smooth={true}
                       className="dropdown-item"
                       to="image-compressor"
                     >
@@ -49,7 +49,7 @@ export default function Navbar() {
                   </li>
                   <li>
                     <ScrollLink
-                      smooth="true"
+                      smooth={true}
                       className="dropdown-item"
                       to="QR-generator"
                     >
@@ -58,7 +58,7 @@ export default function Navbar() {
                   </li>
                   <li>
                     <ScrollLink
-                      smooth="true"
+                      smooth={true}
                       className="dropdown-item"
                       to="image-text-extractor"
                     >
@@ -67,34 +67,34 @@ export default function Navbar() {
                   </li>
                   <li>
                     <ScrollLink
-                      smooth="true"
+                      smooth={true}
                       className="dropdown-item"
                       to="password-generator"
                     >
-                      Password Genarator
+                      Password Generator
                     </ScrollLink>
                   </li>
                   <li>
                     <ScrollLink
-                      smooth="true"
+                      smooth={true}
                       className="dropdown-item"
                       to="yt-thumbnail-downloader"
                     >
-                      Yt Thumbnail Downloader
+                      YT Thumbnail Downloader
                     </ScrollLink>
                   </li>
                   <li>
                     <ScrollLink
-                      smooth="true"
+                      smooth={true}
                       className="dropdown-item"
                       to="url-shortner"
                     >
-                      URL Shortner
+                      URL Shortener
                     </ScrollLink>
                   </li>
                   <li>
                     <ScrollLink
-                      smooth="true"
+                      smooth={true}
                       className="dropdown-item"
                       to="pdf-compressor"
                     >
@@ -103,7 +103,7 @@ export default function Navbar() {
                   </li>
                   <li>
                     <ScrollLink
-                      smooth="true"
+                      smooth={true}
                       className="dropdown-item"
                       to="image-converter"
                     >
@@ -112,7 +112,7 @@ export default function Navbar() {
                   </li>
                   <li>
                     <ScrollLink
-                      smooth="true"
+                      smooth={true}
                       className="dropdown-item"
                       to="text-util"
                     >
@@ -124,25 +124,26 @@ export default function Navbar() {
 
               <li className="nav-item">
                 <RouteLink className="nav-link" to="/contributers">
-                  Contributers
+                  Creator
                 </RouteLink>
               </li>
 
               <li className="nav-item">
                 <RouteLink className="nav-link" to="/signup">
-                  <i class="fa-solid fa-user-astronaut"></i>
+                  <i className="fa-solid fa-user-astronaut"></i>
                 </RouteLink>
               </li>
 
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <a
-                  href="https://github.com/AnshulGora/tools-garage"
+                  href="https://github.com/Vincenzo1208"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="nav-link"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>

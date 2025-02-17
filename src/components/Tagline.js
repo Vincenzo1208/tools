@@ -18,11 +18,11 @@ export default function Tagline() {
 
       <div className="text-center taglinebtns">
         <a
-          href="https://github.com/AnshulGora/tools-garage"
+          href="https://www.linkedin.com/in/chirag-mehroliya-196111293/"
           target="blank"
           className="taglinebtn1"
         >
-          <i class="fa-brands fa-github"></i> Visit Repository
+          <i class="fa-brands fa-linkedin"></i> Follow Me
         </a>
 
         <RouteLink to="/signup" className="taglinebtn2">
